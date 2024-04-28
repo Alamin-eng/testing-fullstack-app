@@ -13,7 +13,8 @@ app.get("/", async(req, res) =>{
         res.status(500)
     }
 })
-let PORT = 3001
-app.listen(PORT, function () {
-  console.log(`Server is listening on port ${PORT}. Ready to accept requests!`);
+const port = process.env.PORT || 4000;
+
+app.listen(port, function () {
+  console.log(`Server is listening on port ${port}. Ready to accept requests!`);
 });
