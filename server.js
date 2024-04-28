@@ -7,7 +7,7 @@ app.use(express.json());
 
 app.get("/", async(req, res) =>{
     try{
-        res.send("Userss")
+        res.send("User")
     }catch(error){
         console.log(error)
         res.status(500)
