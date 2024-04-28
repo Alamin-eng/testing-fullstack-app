@@ -9,7 +9,7 @@ function App() {
   useEffect(()=>{
     let fetchData = async ()=>{
       try{
-        const response = await axios.get("http://localhost:3001/")
+        const response = await axios.get("http://localhost:10000/")
         console.log(response.data)
         setName(response.data)
 
